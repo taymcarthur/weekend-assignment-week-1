@@ -1,0 +1,55 @@
+html {
+  box-sizing:border-box;
+  
+}
+*, *:before, *:after{
+box-sizing:inherit;
+}
+
+#container {
+  width:620px;
+  background:red;
+  padding:10px;
+  margin:auto;
+}
+
+#container:after {
+  content:"";
+  display:block;
+  clear:both;
+}
+
+.skateboarders {
+  position:relative;
+}
+
+.skateboarders div {
+   background:black;
+   color:white;
+   width:200px;
+   height:150px;
+   line-height:150px;
+   text-align:center;
+   float:left;
+   border:2px solid white;
+  }
+
+.skateboarders div:nth-child(3) {
+  clear:left;
+  width:400px;
+}
+
+.skateboarders div:nth-child(4) {
+  height:300px;
+  line-height:300px;
+  margin-top:-150px;
+}
+
+.skateboarders .arrow {
+  width:100px;
+  height:50px;
+  line-height:50px;
+  position:absolute;
+  top:205px;
+  left:-125px;
+}
