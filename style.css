@@ -7,10 +7,85 @@ html {
 
 body {
   background: url("images/bg.jpg");
+  font-family:verdana, arial, tahoma;
+}
+
+.overlay {
+  position:fixed;
+  width:100%;
+  height:100%;
+  background:rgba(0, 0, 0, .5);
+  top:0;
+  left:0;
+  z-index:-1;
+}
+
+.maincontainer {
+  width:1000px;
+  margin:auto;
+}
+
+.socialcontainertop ul {
+  display:flex;
+  list-style-type:none;
+  justify-content: flex-end;
+}
+
+.socialmediatop i {
+  width: 50px;
+  height: 50px;
+  text-align:center;
+  line-height:50px;
+  font-size:36px;
+}
+
+.socialmediabottom a i {
+  width:30px;
+  height:30px;
+  text-align:center;
+  line-height:30px;
+  display:flex;
+  justify-content:space-around;
+  margin-right:3px;
+  color:white;
+}
+
+.socialmediabottom li {
+  background:rgb(54, 55, 50);
+}
+
+.socialmediabottom a {
+  text-decoration:none;
+}
+
+
+.socialcontainerbottom > ul {
+  display:flex;
+  justify-content:flex-start;
+  list-style-type:none;
+  padding:0px;
+  margin-left:20px;
+
+
 }
 
 #menu > ul {
   display:flex;
+  justify-content:space-between;
+  color:red;
+  list-style-type:none;
+  margin-top:80px;
+
+}
+
+#menu a {
+  background:rgb(180, 41, 46);
+  width:190px;
+  text-decoration:none;
+  color:white;
+
+  
+
 }
 
 #container2 > .articles {
@@ -20,10 +95,70 @@ body {
 #container3 {
   
 }
+
 #container4 {
-  width:620px;
-  height:200px;
-  background:#ccc;
+  margin-top:50px;
+  padding:5px;
+  width:1000px;
+  height:auto;
+  background:white;
+  align-content:center;
+
+}
+
+.contactusform:after {
+  content:"";
+  display:block;
+  clear:both;
+}
+
+.contactusform form {
+  display:block;
+  width:500px;
+  margin-top:5px;
+  float:right;
+  margin-right:20px;
+
+}
+
+#contactform > input {
+  margin-top:10px;
+  height:50px;
+  width:500px;
+  border-top-width:3px;
+  border-left-width:3px;
+  border-top-color:rgb(171, 171, 171);
+  border-left-color:rgb(171, 171, 171);
+  border-color:rgb(171, 171, 171);
+
+
+}
+
+#contactform > textarea {
+  margin-top:10px;
+  height:150px;
+  width:500px;
+  border-top-width:3px;
+  border-left-width:3px;
+  border-top-color:rgb(171, 171, 171);
+  border-left-color:rgb(171, 171, 171);
+  border-color:rgb(171, 171, 171);
+}
+
+.words {
+  display:inline-block;
+  width:460px;
+  color:rgb(54, 55, 50);
+}
+
+.words h3 {
+  padding:10px;
+  margin-left:20px;
+}
+
+.words p {
+  padding:0px;
+  margin-left:20px;
 }
 
 .slideshow {
@@ -39,7 +174,7 @@ body {
 }
 
 #container {
-  width:620px;
+  width:1000px;
   background:red;
   padding:10px;
   margin:auto;
@@ -53,6 +188,7 @@ body {
 
 .skateboarders {
   position:relative;
+
 }
 
 .skateboarders div {

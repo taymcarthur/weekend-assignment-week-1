@@ -9,26 +9,33 @@
 </head>
 
 <body>
-<div class=socialcontainertop>
-<ul>
-	<li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
-	<li><i class="fa fa-twitter-square" aria-hidden="true"></i></li>
-	<li><i class="fa fa-tumblr-square" aria-hidden="true"></i></li>
-	<li><i class="fa fa-youtube-square" aria-hidden="true"></i></li>
-</ul>
+<div class="overlay"></div>
+<div class="maincontainer">
+<div class="socialcontainertop">
+	<ul class="socialmediatop">
+         <li><a href="www.facebook.com" style="color: #737FAD "><i class="fa fa-facebook" aria-hidden="true" style="background-color: #445897 "></i></a></li>
+         <li><a href="www.feed.com" style="color: #D4AD66 "><i class="fa fa-rss" aria-hidden="true" style="background-color: #CC8F32 "></i></a></li>
+         <li><a href="www.twitter.com" style="color: #829AC3 "><i class="fa fa-twitter" aria-hidden="true" style="background-color: #6A8DC7 "></i></a></li>
+         <li><a href="www.youtube.com" style="color: #C25551 "><i class="fa fa-youtube" aria-hidden="true" style="background-color: #B2382D"></i></a></li>
+    </ul>
+ </div>
+</div>
+</div>
+
 <div id="menu">
-<ul>
+	<ul>
         <li><a href="sk8news.html">- SK8 NEWS -</a></li>
         <li><a href="skateboarders.html">- SKATEBOARDERS -</a></li>
         <li><a href="board-design.html">- BOARD DESIGN -</a></li>
         <li><a href="contact-us.html">- CONTACT US -</a></li>
-        </ul>
+    </ul>
 </div>  
 
 <div id="container3">
 	<div class="slideshow">
 	</div>
-</div>
+</div> 
+
 <div id="container2">
 	<div class="articles">
 		<div>
@@ -43,41 +50,55 @@
 	</div>
 </div>
 
-	<div id="container">
-		<div class="skateboarders">
+<div id="container">
+	<div class="skateboarders">
 		<div>Lance Mountain</div>
 		<div>2</div>
 		<div>3</div>
 		<div>4</div>
-		 <div class="arrow">skateboarder</div>
-		</div>
-		</div>
-
-	<div id="container1">
-		<div class="skateboardpic">
-		</div>
+		<div class="arrow">skateboarder</div>
 	</div>
+</div>
+
+<div id="container1">
+	<div class="skateboardpic">
+	</div>
+</div>
 
 <div id="container4">
 	<div class="contactusform">
+		<div class="words">
 	
-	<h3>
-	Contact Us for More Information
-	</h3>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum odio aspernatur est ullam impedit odit veritatis enim dolorum eos, omnis, alias deserunt atque sunt ratione fugiat dolore tempore, fuga animi?</p>
+		<h3>
+		Contact Us for More Information
+		</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum odio aspernatur est ullam impedit odit veritatis enim dolorum eos, omnis, alias deserunt atque sunt ratione fugiat dolore tempore, fuga animi?</p>
+		</div>
+
+	<form id="contactform">
+		<input id="name" class="input" name="name" placeholder="Name" type="text" value=""><br />
+
+		<input id="email" class="input" name="email" placeholder="Email" type="email"><br />
+
+		<textarea id="yourmessage" class="textarea" name="message" placeholder="Type your message" type="text"> </textarea>
+		</form>
+
+	<div class="socialcontainerbottom">
+		<ul class="socialmediabottom">
+			<li>
+				<a href="www.facebook.com" >
+					<i class="fa fa-facebook" aria-hidden="true"></i>
+				</a>
+			</li>
+			 <li><a href="www.feed.com" style="color:white"><i class="fa fa-rss" aria-hidden="true" style="background-color:black"></i></a></li>
+	         <li><a href="www.twitter.com" style="color:white"><i class="fa fa-twitter" aria-hidden="true" style="background-color:black"></i></a></li>
+	         <li><a href="www.youtube.com" style="color:white"><i class="fa fa-youtube" aria-hidden="true" style="background-color:black"></i></a></li>
+			</ul>
+		</div>
+
 	</div>
 </div>
-	<div class=socialcontainerbottom>
-		<ul>
-			<li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
-			<li><i class="fa fa-twitter-square" aria-hidden="true"></i></li>
-			<li><i class="fa fa-tumblr-square" aria-hidden="true"></i></li>
-			<li><i class="fa fa-youtube-square" aria-hidden="true"></i></li>
-		</ul>
-	</div>
-
-	  </div>
-	</div>
+</div>
 	
 </body>
 </html>
