@@ -25,10 +25,21 @@ body {
   margin:auto;
 }
 
-.socialcontainertop ul {
+.socialcontainertop {
   display:flex;
-  list-style-type:none;
   justify-content: flex-end;
+}
+
+.socialcontainertop p {
+  color:white;
+
+
+}
+
+.socialcontainertop ul {
+  list-style-type:none;
+  display:flex;
+
 }
 
 .socialmediatop i {
@@ -74,17 +85,25 @@ body {
   justify-content:space-between;
   color:red;
   list-style-type:none;
-  margin-top:80px;
+  padding:0;
 
 }
 
-#menu a {
-  background:rgb(180, 41, 46);
-  width:190px;
-  text-decoration:none;
+#menu ul > li {
+  text-transform:uppercase;
+  text-align:center;
   color:white;
+  line-height:50px;
+  background:rgb(180, 41, 46);
+  width:230px;
+  height:50px;
+  border-bottom:5px solid white;
 
-  
+}
+
+.menuwords li:before, .menuwords li:after {
+  content: "\2014";
+  margin: 0 12px;
 
 }
 
@@ -92,8 +111,22 @@ body {
   display:flex;
 }
 
-#container3 {
+#container3{
   
+}
+
+.articles div {
+  background-color:white;
+  width:300px;
+  height:400px;
+  padding:0 20px;
+}
+
+.articles {
+  display:flex;
+  justify-content:space-between;
+  margin-top:20px;
+  margin-bottom:20px;
 }
 
 #container4 {
@@ -163,12 +196,22 @@ body {
 
 .slideshow {
   position:relative;
+  background:url("images/top-image.png");
+  width:100%;
+  height:400px;
+  background-position:40% 20%;
+  border:10px solid white;
 }
 
-.slideshow div {
-  background:white;
-  width:300px;
-  height:100px;
+.radio {
+  width:10%;
+  margin:auto;
+}
+
+.skull {
+  position:relative;
+  top:60px;
+  left:10px;
 }
 
 }
@@ -192,32 +235,67 @@ body {
 }
 
 .skateboarders div {
-  background:black;
   color:white;
-  width:200px;
-  height:150px;
-  line-height:150px;
+  width:320px;
+  height:250px;
+  line-height:30px;
+  font-size:30px;
+  padding-top:100px;
+  font-weight:bold;
   text-align:center;
   float:left;
   border:2px solid white;
 }
 
+.skateboarders div:first-child {
+  background-image:url("images/sk8er-4.png");
+  margin-right:25px;
+  background-position:100% 0;
+}
+
+.skateboarders div:nth-child(2) {
+  background-image:url("images/sk8er-3.png");
+  margin-right:25px;
+
+}
+
 .skateboarders div:nth-child(3) {
+  background-image:url("images/sk8er-1.png");
   clear:left;
-  width:400px;
+  width:665px;
+  padding-top:100px;
+  margin-top:25px;
+  margin-right:15px;
+  background-position:0 90%;
 }
 
 .skateboarders div:nth-child(4) {
-  height:300px;
-  line-height:300px;
-  margin-top:-150px;
+  background-image:url("images/sk8er-2.png");
+  height:525px;
+  line-height:20px;
+  padding-top:240px;
+  margin-top:-250px;
+  background-position:80% 10%;
+  background-size:700px 550px;
+
+}
+
+.skateboardpic ul {
+  display:flex;
+  background:white;
+  justify-content:space-around;
+  list-style:none;
 }
 
 .skateboarders .arrow {
   width:100px;
   height:50px;
-  line-height:50px;
+  font-size:13px;
+  background-color:red;
+  color:white;
+  line-height:40px;
+  padding:0;
   position:absolute;
-  top:203px;
+  top:103px;
   left:-125px;
 }
